@@ -3,570 +3,1224 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SHREE JI ENTERPRISES - Grahak Sewa Kendra | Online Services, PF, PVC Card, Printing, MP Bhulekh, Lamination & More">
+
 <title>SHREE JI ENTERPRISES | GRAHAK SEWA KENDRA</title>
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-font-family:Arial,"Noto Sans Devanagari",sans-serif;
-background:#f5f7fb;color:#172033;line-height:1.5;
-padding-bottom:70px
-}
-a{text-decoration:none;color:inherit}
-button{font:inherit;cursor:pointer;border:0}
+<meta name="description"
+content="SHREE JI ENTERPRISES Grahak Sewa Kendra - PF, PVC Card, Printing, Lamination, Samagra, MP Bhulekh, Online Services और सभी डिजिटल सेवाएँ।">
 
-.top{
-background:#111827;color:#fff;text-align:center;padding:8px;font-size:13px
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,"Noto Sans Devanagari",sans-serif;
+    background:#f5f9ff;
+    color:#172033;
+}
+
+/* ================= TOP BAR ================= */
+
+.topbar{
+    background:#073b82;
+    color:#fff;
+    padding:9px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:14px;
+}
+
+.topbar a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px;
+}
+
+/* ================= HEADER ================= */
+
 .header{
-background:#fff;padding:15px 5%;display:flex;align-items:center;
-justify-content:space-between;gap:15px;position:sticky;top:0;z-index:50;
-box-shadow:0 2px 15px #0001
+    background:#fff;
+    padding:15px 5%;
+    display:flex;
+    align-items:center;
+    gap:25px;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
-.logoBox{display:flex;align-items:center;gap:10px}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    min-width:270px;
+}
+
 .logo{
-width:52px;height:52px;border-radius:12px;
-background:linear-gradient(135deg,#ff7a00,#ff1744);
-display:flex;align-items:center;justify-content:center;
-color:#fff;font-size:25px;font-weight:bold
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    border-radius:10px;
 }
-.logoText b{display:block;font-size:18px}
-.logoText span{font-size:11px;color:#666}
-.wa{
-background:#16a34a;color:white;padding:10px 15px;border-radius:25px;
-font-weight:bold
+
+.brand h1{
+    color:#073b82;
+    font-size:24px;
 }
+
+.brand p{
+    color:#555;
+    font-size:13px;
+    margin-top:4px;
+}
+
+.search-box{
+    flex:1;
+    position:relative;
+}
+
+.search-box input{
+    width:100%;
+    padding:14px 50px 14px 20px;
+    border:1px solid #d7e1ef;
+    border-radius:30px;
+    outline:none;
+    font-size:15px;
+    background:#f8fbff;
+}
+
+.search-box span{
+    position:absolute;
+    right:18px;
+    top:12px;
+    font-size:22px;
+}
+
+.whatsapp-btn{
+    background:#16a34a;
+    color:#fff;
+    text-decoration:none;
+    padding:13px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+/* ================= NAV ================= */
+
+.nav{
+    background:#062f6b;
+    display:flex;
+    justify-content:center;
+    gap:5px;
+    padding:0 5%;
+}
+
+.nav a{
+    color:#fff;
+    text-decoration:none;
+    padding:14px 18px;
+    font-size:14px;
+}
+
+.nav a:hover{
+    background:#0b4e9d;
+}
+
+/* ================= HERO ================= */
 
 .hero{
-padding:55px 5%;background:
-radial-gradient(circle at 90% 20%,#ffdfb8,transparent 30%),
-linear-gradient(135deg,#fff,#eef4ff)
+    background:linear-gradient(135deg,#dceeff,#f8fcff);
+    padding:55px 7%;
+    min-height:390px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    overflow:hidden;
 }
-.heroInner{max-width:1200px;margin:auto}
+
+.hero-content{
+    max-width:650px;
+}
+
 .badge{
-display:inline-block;background:#fff0df;color:#e85d00;padding:7px 14px;
-border-radius:20px;font-weight:bold;font-size:13px;margin-bottom:15px
-}
-.hero h1{font-size:clamp(32px,7vw,65px);line-height:1.05;margin-bottom:15px}
-.hero h1 span{color:#ff6500}
-.hero p{max-width:650px;color:#586174;font-size:17px;margin-bottom:25px}
-.heroBtns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{
-padding:13px 20px;border-radius:12px;font-weight:bold;display:inline-block
-}
-.primary{background:#ff6500;color:#fff}
-.secondary{background:#fff;border:1px solid #ddd}
-
-.searchBox{
-max-width:900px;margin:-25px auto 30px;padding:0 5%;position:relative;z-index:5
-}
-.search{
-width:100%;padding:17px 20px;border-radius:15px;border:1px solid #ddd;
-box-shadow:0 8px 30px #0002;font-size:16px;outline:none
+    display:inline-block;
+    background:#e5f1ff;
+    color:#0750a0;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+    margin-bottom:18px;
 }
 
-.section{max-width:1200px;margin:55px auto;padding:0 5%}
-.sectionHead{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:22px}
-.sectionHead h2{font-size:30px}
-.sectionHead p{color:#697386}
-
-.categories{
-display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:12px
-}
-.cat{
-background:#fff;border:1px solid #e8eaf0;border-radius:16px;padding:18px 10px;
-text-align:center;transition:.25s
-}
-.cat:hover{transform:translateY(-5px);box-shadow:0 10px 25px #0001}
-.catIcon{font-size:32px;margin-bottom:7px}
-.cat b{font-size:14px}
-
-.products{
-display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px
-}
-.card{
-background:#fff;border-radius:20px;overflow:hidden;border:1px solid #e8eaf0;
-box-shadow:0 5px 20px #0000000b;transition:.25s
-}
-.card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #0002}
-.visual{
-height:175px;display:flex;align-items:center;justify-content:center;
-background:linear-gradient(135deg,#eef2ff,#fff4e8);position:relative;
-perspective:700px
-}
-.product3d{
-width:145px;height:92px;border-radius:12px;background:#fff;
-box-shadow:0 18px 25px #0003;display:flex;align-items:center;
-justify-content:center;font-size:48px;transition:.2s;
-transform:rotateX(8deg) rotateY(-18deg)
-}
-.card:hover .product3d{transform:rotateX(0) rotateY(10deg) scale(1.05)}
-.cardBody{padding:17px}
-.tag{font-size:11px;color:#ff6500;font-weight:bold}
-.card h3{margin:5px 0;font-size:19px}
-.price{font-size:21px;font-weight:bold;color:#111;margin:8px 0 14px}
-.cardBtns{display:flex;gap:8px}
-.smallBtn{
-flex:1;padding:10px;border-radius:10px;background:#111827;color:#fff;font-weight:bold
-}
-.smallBtn.green{background:#16a34a}
-
-.info{
-max-width:1200px;margin:40px auto;padding:25px 5%;
-display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px
-}
-.infoBox{background:#111827;color:#fff;padding:22px;border-radius:18px}
-.infoBox b{font-size:20px}
-.infoBox p{color:#cbd5e1;font-size:14px;margin-top:5px}
-
-.about{
-background:#111827;color:white;padding:50px 5%;margin-top:50px
-}
-.aboutInner{max-width:1100px;margin:auto}
-.about h2{font-size:32px;margin-bottom:12px}
-.about p{color:#cbd5e1;max-width:800px}
-.contact{
-display:flex;gap:12px;flex-wrap:wrap;margin-top:20px
+.hero h2{
+    font-size:42px;
+    color:#063c82;
+    line-height:1.15;
+    margin-bottom:18px;
 }
 
-footer{background:#080d17;color:#aaa;text-align:center;padding:25px 15px;font-size:13px}
-
-.mobileBar{
-position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #ddd;
-display:flex;justify-content:space-around;padding:9px 5px;z-index:100
+.hero h2 span{
+    color:#16a34a;
 }
-.mobileBar a{text-align:center;font-size:11px;color:#555}
-.mobileBar span{display:block;font-size:21px}
+
+.hero p{
+    font-size:17px;
+    line-height:1.7;
+    color:#526173;
+    margin-bottom:25px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn-primary{
+    background:#073b82;
+    color:#fff;
+    padding:14px 23px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn-green{
+    background:#16a34a;
+    color:#fff;
+    padding:14px 23px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero-visual{
+    width:420px;
+    height:290px;
+    position:relative;
+}
+
+.visual-card{
+    position:absolute;
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 20px 50px rgba(22,70,130,.18);
+    text-align:center;
+}
+
+.main-visual{
+    width:280px;
+    height:190px;
+    right:30px;
+    top:40px;
+    transform:rotate(-4deg);
+}
+
+.main-visual .big-icon{
+    font-size:70px;
+}
+
+.main-visual h3{
+    color:#073b82;
+}
+
+.small-card{
+    width:150px;
+    padding:18px;
+}
+
+.small-one{
+    left:0;
+    top:20px;
+}
+
+.small-two{
+    right:0;
+    bottom:0;
+}
+
+/* ================= SECTION ================= */
+
+.section{
+    padding:55px 5%;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-heading h2{
+    color:#073b82;
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.section-heading p{
+    color:#68778c;
+}
+
+/* ================= CATEGORY ================= */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:15px;
+}
+
+.category-card{
+    background:#fff;
+    border-radius:12px;
+    padding:22px 10px;
+    text-align:center;
+    border:1px solid #e3ebf5;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.category-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,50,120,.12);
+    border-color:#8bb9ef;
+}
+
+.category-icon{
+    width:58px;
+    height:58px;
+    margin:auto auto 12px;
+    background:#eaf4ff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:29px;
+}
+
+.category-card h3{
+    font-size:14px;
+    color:#173e72;
+}
+
+/* ================= FEATURE ================= */
+
+.feature-strip{
+    background:#073b82;
+    color:#fff;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:30px 6%;
+}
+
+.feature{
+    text-align:center;
+}
+
+.feature-icon{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.feature h3{
+    font-size:16px;
+    margin-bottom:5px;
+}
+
+.feature p{
+    font-size:12px;
+    opacity:.8;
+}
+
+/* ================= PRODUCTS ================= */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    border:1px solid #e1e9f3;
+    transition:.25s;
+    box-shadow:0 4px 15px rgba(0,30,80,.04);
+}
+
+.product-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,50,120,.12);
+}
+
+.product-image{
+    height:175px;
+    background:linear-gradient(135deg,#e9f4ff,#f9fcff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.product-icon{
+    font-size:75px;
+}
+
+.product-body{
+    padding:18px;
+}
+
+.product-body h3{
+    color:#073b82;
+    font-size:17px;
+    margin-bottom:8px;
+}
+
+.product-body p{
+    color:#68778c;
+    font-size:13px;
+    line-height:1.5;
+    min-height:40px;
+}
+
+.price{
+    color:#0b7b39;
+    font-size:19px;
+    font-weight:bold;
+    margin:12px 0;
+}
+
+.product-buttons{
+    display:flex;
+    gap:8px;
+}
+
+.details-btn{
+    flex:1;
+    background:#eaf3ff;
+    color:#073b82;
+    border:0;
+    padding:10px;
+    border-radius:7px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.order-btn{
+    flex:1;
+    background:#16a34a;
+    color:white;
+    border:0;
+    padding:10px;
+    border-radius:7px;
+    cursor:pointer;
+    text-decoration:none;
+    text-align:center;
+    font-size:13px;
+}
+
+/* ================= RATE TABLE ================= */
+
+.rate-section{
+    background:#eef6ff;
+}
+
+.rate-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.rate-table th{
+    background:#073b82;
+    color:#fff;
+    padding:14px;
+    text-align:left;
+}
+
+.rate-table td{
+    padding:12px 14px;
+    border-bottom:1px solid #e8edf4;
+}
+
+.rate-table tr:hover{
+    background:#f4f9ff;
+}
+
+.rate{
+    color:#07823c;
+    font-weight:bold;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    margin:20px 5% 50px;
+    background:linear-gradient(135deg,#073b82,#0a5bb8);
+    color:#fff;
+    border-radius:18px;
+    padding:40px;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.cta p{
+    opacity:.9;
+    margin-bottom:20px;
+}
+
+.cta a{
+    display:inline-block;
+    background:#16a34a;
+    color:#fff;
+    padding:14px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+    background:#062957;
+    color:#fff;
+    padding:45px 6% 85px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr 1fr;
+    gap:35px;
+}
+
+.footer h3{
+    margin-bottom:15px;
+}
+
+.footer p,
+.footer li{
+    color:#cbd8e9;
+    font-size:14px;
+    line-height:1.8;
+}
+
+.footer ul{
+    list-style:none;
+}
+
+.footer a{
+    color:#cbd8e9;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    margin-top:35px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+    color:#b9c7d8;
+    font-size:13px;
+}
+
+/* ================= MODAL ================= */
 
 .modal{
-position:fixed;inset:0;background:#0009;z-index:200;display:none;
-align-items:center;justify-content:center;padding:15px
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,20,50,.7);
+    z-index:3000;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
 }
-.modal.active{display:flex}
-.modalBox{
-background:#fff;width:min(650px,100%);max-height:90vh;overflow:auto;
-border-radius:22px;padding:22px;position:relative
+
+.modal.active{
+    display:flex;
 }
+
+.modal-box{
+    background:#fff;
+    width:100%;
+    max-width:650px;
+    max-height:90vh;
+    overflow:auto;
+    border-radius:18px;
+    padding:30px;
+    position:relative;
+}
+
 .close{
-position:absolute;right:15px;top:12px;background:#eee;border-radius:50%;
-width:35px;height:35px;font-size:20px
+    position:absolute;
+    right:18px;
+    top:12px;
+    font-size:30px;
+    cursor:pointer;
+    color:#555;
 }
-.detailVisual{
-height:240px;background:linear-gradient(135deg,#e9efff,#fff0dd);
-border-radius:16px;display:flex;align-items:center;justify-content:center;
-perspective:800px;margin-bottom:18px
-}
-.detailProduct{
-width:220px;height:135px;background:white;border-radius:18px;
-display:flex;align-items:center;justify-content:center;font-size:70px;
-box-shadow:0 25px 35px #0003;transition:.15s;
-transform-style:preserve-3d
-}
-.hint{text-align:center;color:#777;font-size:12px;margin-top:-8px;margin-bottom:15px}
 
-.rateList{margin:15px 0}
-.rateRow{
-display:flex;justify-content:space-between;padding:9px 0;
-border-bottom:1px solid #eee
+.modal-icon{
+    text-align:center;
+    font-size:85px;
+    background:#edf6ff;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:20px;
 }
-.rateRow b:last-child{color:#e85d00}
 
-.noResult{text-align:center;padding:35px;color:#777;display:none}
-
-@media(max-width:600px){
-.header{padding:11px 4%}
-.logoText b{font-size:14px}
-.logo{width:44px;height:44px}
-.wa{padding:8px 11px;font-size:12px}
-.hero{padding:42px 5%}
-.hero p{font-size:15px}
-.section{margin:40px auto}
-.products{grid-template-columns:repeat(2,1fr);gap:10px}
-.card{border-radius:15px}
-.visual{height:130px}
-.product3d{width:105px;height:68px;font-size:35px}
-.cardBody{padding:11px}
-.card h3{font-size:15px}
-.price{font-size:17px}
-.smallBtn{font-size:11px;padding:8px}
-.categories{grid-template-columns:repeat(3,1fr)}
-.cat{padding:12px 5px}
-.catIcon{font-size:25px}
-.cat b{font-size:11px}
-.sectionHead h2{font-size:24px}
+.modal-box h2{
+    color:#073b82;
+    margin-bottom:10px;
 }
+
+.modal-box p{
+    color:#617087;
+    line-height:1.7;
+}
+
+.modal-rate{
+    color:#07823c;
+    font-size:22px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.modal-whatsapp{
+    display:block;
+    background:#16a34a;
+    color:#fff;
+    padding:14px;
+    text-align:center;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* ================= MOBILE BAR ================= */
+
+.mobile-bar{
+    display:none;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1100px){
+
+    .category-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:800px){
+
+    .topbar{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .topbar .right{
+        display:none;
+    }
+
+    .header{
+        flex-wrap:wrap;
+        padding:12px 4%;
+        gap:12px;
+    }
+
+    .logo-area{
+        min-width:auto;
+        flex:1;
+    }
+
+    .brand h1{
+        font-size:18px;
+    }
+
+    .brand p{
+        font-size:11px;
+    }
+
+    .logo{
+        width:52px;
+        height:52px;
+    }
+
+    .search-box{
+        order:3;
+        flex-basis:100%;
+    }
+
+    .header .whatsapp-btn{
+        padding:10px 13px;
+        font-size:12px;
+    }
+
+    .nav{
+        display:none;
+    }
+
+    .hero{
+        padding:40px 5%;
+        min-height:auto;
+        display:block;
+    }
+
+    .hero h2{
+        font-size:31px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .hero-visual{
+        width:100%;
+        height:240px;
+        margin-top:25px;
+    }
+
+    .main-visual{
+        right:8%;
+    }
+
+    .category-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .feature-strip{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .mobile-bar{
+        display:flex;
+        position:fixed;
+        bottom:0;
+        left:0;
+        right:0;
+        height:62px;
+        background:#fff;
+        box-shadow:0 -4px 20px rgba(0,0,0,.15);
+        z-index:2000;
+        justify-content:space-around;
+    }
+
+    .mobile-bar a{
+        text-decoration:none;
+        color:#173e72;
+        font-size:11px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:3px;
+    }
+
+    .mobile-bar span{
+        font-size:21px;
+    }
+
+}
+
+@media(max-width:520px){
+
+    .section{
+        padding:40px 4%;
+    }
+
+    .section-heading h2{
+        font-size:24px;
+    }
+
+    .category-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:8px;
+    }
+
+    .category-card{
+        padding:15px 5px;
+    }
+
+    .category-icon{
+        width:48px;
+        height:48px;
+        font-size:23px;
+    }
+
+    .category-card h3{
+        font-size:11px;
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .product-image{
+        height:125px;
+    }
+
+    .product-icon{
+        font-size:55px;
+    }
+
+    .product-body{
+        padding:12px;
+    }
+
+    .product-body h3{
+        font-size:14px;
+    }
+
+    .product-body p{
+        font-size:11px;
+    }
+
+    .price{
+        font-size:16px;
+    }
+
+    .product-buttons{
+        flex-direction:column;
+    }
+
+    .feature-strip{
+        gap:10px;
+        padding:25px 4%;
+    }
+
+    .feature h3{
+        font-size:13px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cta{
+        margin:10px 4% 40px;
+        padding:30px 18px;
+    }
+
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="top">📲 Online Services • Printing • PVC • PF • MP Bhulekh • Documents</div>
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+    <div>
+        📞 8109345074
+    </div>
+
+    <div class="right">
+        <a href="https://wa.me/918109345074">WhatsApp</a>
+        <a href="https://whatsapp.com/channel/0029VbDCooUAjPXKGRewvM22">
+            Community
+        </a>
+    </div>
+
+</div>
+
+
+<!-- HEADER -->
 
 <header class="header">
-<div class="logoBox">
-<div class="logo">SJ</div>
-<div class="logoText">
-<b>SHREE JI ENTERPRISES</b>
-<span>GRAHAK SEWA KENDRA</span>
-</div>
-</div>
-<a class="wa" href="https://wa.me/918109345074" target="_blank">WhatsApp</a>
+
+    <div class="logo-area">
+
+        <img
+        class="logo"
+        src="https://raw.githubusercontent.com/shreejienterprises810/SHREEJIENTERPRISES/main/logo.jpg"
+        alt="SHREE JI ENTERPRISES Logo">
+
+        <div class="brand">
+
+            <h1>SHREE JI ENTERPRISES</h1>
+
+            <p>GRAHAK SEWA KENDRA</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="search-box">
+
+        <input
+        type="search"
+        id="searchInput"
+        placeholder="🔎 सेवा खोजें... जैसे PVC, PF, Khasra">
+
+        <span>🔍</span>
+
+    </div>
+
+
+    <a
+    class="whatsapp-btn"
+    href="https://wa.me/918109345074"
+    target="_blank">
+
+        💬 WhatsApp
+
+    </a>
+
 </header>
 
-<section class="hero">
-<div class="heroInner">
-<div class="badge">✨ ONE STOP DIGITAL SERVICE CENTER</div>
-<h1>आपका काम,<br><span>एक ही जगह!</span></h1>
-<p>
-PF, PVC Card, Printing, Lamination, Samagra, ITR, MSME,
-MP Bhulekh और अनेक ऑनलाइन सेवाएँ।
-</p>
-<div class="heroBtns">
-<a class="btn primary" href="#services">🛍️ सेवाएँ देखें</a>
-<a class="btn secondary" href="https://wa.me/918109345074" target="_blank">💬 WhatsApp करें</a>
-</div>
-</div>
+
+<!-- NAVIGATION -->
+
+<nav class="nav">
+
+    <a href="#home">Home</a>
+
+    <a href="#categories">Categories</a>
+
+    <a href="#popular">Popular Services</a>
+
+    <a href="#rates">Rate List</a>
+
+    <a href="#contact">Contact</a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            ✨ आपकी सभी डिजिटल सेवाएँ एक ही स्थान पर
+        </div>
+
+        <h2>
+            SHREE JI ENTERPRISES
+            <br>
+            <span>GRAHAK SEWA KENDRA</span>
+        </h2>
+
+        <p>
+            PF, PVC Card, Printing, Lamination, Samagra,
+            MP Bhulekh, Documents और सभी प्रकार की
+            Online Services अब एक ही जगह।
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+            href="https://wa.me/918109345074"
+            class="btn-green"
+            target="_blank">
+
+                📲 WhatsApp पर संपर्क करें
+
+            </a>
+
+            <a
+            href="#categories"
+            class="btn-primary">
+
+                सेवाएँ देखें →
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+        <div class="visual-card small-card small-one">
+            🪪
+            <br>
+            <b>PVC CARD</b>
+            <br>
+            <small>₹150 से</small>
+        </div>
+
+
+        <div class="visual-card main-visual">
+
+            <div class="big-icon">
+                💻
+            </div>
+
+            <h3>
+                DIGITAL SERVICES
+            </h3>
+
+            <p>
+                Fast • Reliable • Professional
+            </p>
+
+        </div>
+
+
+        <div class="visual-card small-card small-two">
+            🖨️
+            <br>
+            <b>PRINTING</b>
+            <br>
+            <small>₹16/sq.ft से</small>
+        </div>
+
+    </div>
+
 </section>
 
-<div class="searchBox">
-<input class="search" id="search" type="search"
-placeholder="🔍 सेवा खोजें... जैसे PVC, PF, Khasra, Printing">
-</div>
+
+<!-- CATEGORIES -->
 
 <section class="section" id="categories">
-<div class="sectionHead">
-<div>
-<h2>सभी Categories</h2>
-<p>अपनी जरूरत की सेवा चुनें</p>
-</div>
-</div>
 
-<div class="categories">
-<a class="cat" href="#services"><div class="catIcon">🪪</div><b>PVC Cards</b></a>
-<a class="cat" href="#services"><div class="catIcon">💼</div><b>PF Services</b></a>
-<a class="cat" href="#services"><div class="catIcon">🖨️</div><b>Printing</b></a>
-<a class="cat" href="#services"><div class="catIcon">📇</div><b>Visiting Card</b></a>
-<a class="cat" href="#services"><div class="catIcon">📄</div><b>Copy & Print</b></a>
-<a class="cat" href="#services"><div class="catIcon">💳</div><b>Lamination</b></a>
-<a class="cat" href="#services"><div class="catIcon">💰</div><b>Payment</b></a>
-<a class="cat" href="#services"><div class="catIcon">👨‍👩‍👧</div><b>Samagra</b></a>
-<a class="cat" href="#services"><div class="catIcon">🌐</div><b>Online Services</b></a>
-<a class="cat" href="#services"><div class="catIcon">📑</div><b>Documents</b></a>
-<a class="cat" href="#services"><div class="catIcon">🗺️</div><b>MP Bhulekh</b></a>
-<a class="cat" href="#services"><div class="catIcon">🪧</div><b>Boards & Frames</b></a>
-</div>
+    <div class="section-heading">
+
+        <h2>हमारी सेवाएँ</h2>
+
+        <p>
+            अपनी आवश्यकता के अनुसार सेवा चुनें
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <div class="category-card" onclick="filterCategory('PVC')">
+            <div class="category-icon">🪪</div>
+            <h3>PVC Cards</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('PF')">
+            <div class="category-icon">💼</div>
+            <h3>PF Services</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Printing')">
+            <div class="category-icon">🖨️</div>
+            <h3>Printing & Design</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Visiting')">
+            <div class="category-icon">📇</div>
+            <h3>Visiting Card</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Copy')">
+            <div class="category-icon">📄</div>
+            <h3>Copy & Print</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Lamination')">
+            <div class="category-icon">💳</div>
+            <h3>Lamination</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Payment')">
+            <div class="category-icon">💰</div>
+            <h3>Payment / Transfer</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Samagra')">
+            <div class="category-icon">👨‍👩‍👧</div>
+            <h3>Samagra</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Online')">
+            <div class="category-icon">🌐</div>
+            <h3>Online Services</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Documents')">
+            <div class="category-icon">📑</div>
+            <h3>Documents</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Bhulekh')">
+            <div class="category-icon">🗺️</div>
+            <h3>MP Bhulekh</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Board')">
+            <div class="category-icon">🪧</div>
+            <h3>Boards & Frames</h3>
+        </div>
+
+    </div>
+
 </section>
 
-<section class="section" id="services">
-<div class="sectionHead">
-<div>
-<h2>🔥 हमारी सेवाएँ</h2>
-<p>सेवा पर क्लिक करके पूरी जानकारी और रेट देखें</p>
-</div>
-</div>
 
-<div class="products" id="products"></div>
-<div class="noResult" id="noResult">😕 कोई सेवा नहीं मिली</div>
+<!-- FEATURES -->
+
+<section class="feature-strip">
+
+    <div class="feature">
+
+        <div class="feature-icon">⚡</div>
+
+        <h3>तेज़ सेवा</h3>
+
+        <p>समय पर कार्य पूरा</p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">🔒</div>
+
+        <h3>भरोसेमंद काम</h3>
+
+        <p>सुरक्षित एवं विश्वसनीय</p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">💰</div>
+
+        <h3>उचित मूल्य</h3>
+
+        <p>स्पष्ट एवं उचित शुल्क</p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">📲</div>
+
+        <h3>WhatsApp Support</h3>
+
+        <p>ऑनलाइन जानकारी उपलब्ध</p>
+
+    </div>
+
 </section>
 
-<div class="info">
-<div class="infoBox"><b>⚡ तेज सेवा</b><p>आपके काम को आसान और सुविधाजनक बनाने की कोशिश।</p></div>
-<div class="infoBox"><b>💯 भरोसेमंद</b><p>ऑनलाइन एवं प्रिंटिंग से जुड़ी अनेक सेवाएँ।</p></div>
-<div class="infoBox"><b>📲 WhatsApp</b><p>जानकारी और सेवा के लिए सीधे संपर्क करें।</p></div>
-<div class="infoBox"><b>🏪 One Stop</b><p>कई सेवाएँ एक ही स्थान पर उपलब्ध।</p></div>
-</div>
 
-<section class="about">
-<div class="aboutInner">
-<h2>SHREE JI ENTERPRISES</h2>
-<p>
-GRAHAK SEWA KENDRA — Online Services, PF Services,
-PVC Cards, Printing & Designing, Lamination, Documents,
-MP Bhulekh और अन्य डिजिटल सेवाएँ।
-</p>
+<!-- POPULAR -->
 
-<div class="contact">
-<a class="btn primary" href="https://wa.me/918109345074" target="_blank">📲 WhatsApp पर संपर्क करें</a>
-<a class="btn secondary" href="https://maps.app.goo.gl/ohD44UrFSPPHvAii8?g_st=ac" target="_blank">📍 दुकान का Location</a>
-</div>
-</div>
+<section class="section" id="popular">
+
+    <div class="section-heading">
+
+        <h2>लोकप्रिय सेवाएँ</h2>
+
+        <p>
+            सबसे अधिक उपयोग की जाने वाली सेवाएँ
+        </p>
+
+    </div>
+
+
+    <div class="product-grid" id="productGrid">
+
+        <!-- PRODUCTS JS से आएंगे -->
+
+    </div>
+
 </section>
 
-<footer>
-© 2026 SHREE JI ENTERPRISES | GRAHAK SEWA KENDRA<br>
-आपका काम • हमारी सेवा
-</footer>
 
-<div class="mobileBar">
-<a href="#"><span>🏠</span>Home</a>
-<a href="#categories"><span>📂</span>Categories</a>
-<a href="#services"><span>🛍️</span>Services</a>
-<a href="https://wa.me/918109345074" target="_blank"><span>💬</span>WhatsApp</a>
-</div>
+<!-- RATE LIST -->
 
-<div class="modal" id="modal">
-<div class="modalBox">
-<button class="close" onclick="closeModal()">×</button>
-<div class="detailVisual">
-<div class="detailProduct" id="detailIcon">🪪</div>
-</div>
-<div class="hint">☝️ Product को उंगली से घुमाकर 3D effect देखें</div>
-<h2 id="detailTitle"></h2>
-<p id="detailDesc"></p>
-<div class="price" id="detailPrice"></div>
-<div class="rateList" id="rateList"></div>
-<a id="detailWhatsApp" class="btn primary" target="_blank">
-📲 अधिक जानकारी के लिए अभी WhatsApp पर जाएँ
-</a>
-</div>
-</div>
+<section class="section rate-section" id="rates">
 
-<script>
-const products=[
+    <div class="section-heading">
 
-{
-name:"PVC Card",
-cat:"PVC Cards",
-icon:"🪪",
-price:"₹150 से",
-desc:"Aadhaar, PAN, Voter, Sambal, e-Shram, Driving Licence, RC आदि PVC Cards.",
-rates:[
-["1 PVC Card","₹150"],["2 PVC Cards","₹250"],["3 PVC Cards","₹300"]
-]
-},
+        <h2>मुख्य रेट लिस्ट</h2>
 
-{
-name:"PF Services",
-cat:"PF Services",
-icon:"💼",
-price:"₹20 से",
-desc:"PF Balance, Card, KYC, Activation, Nomination, Transfer और Settlement.",
-rates:[
-["PF Balance Check","₹20"],["PF Card","₹60"],["PF Form Apply","₹150"],
-["Full Settlement","₹200"],["PF Pension","₹200"],["PF KYC","₹150"],
-["Allotment","₹100"],["Activation","₹100"],["Nomination","₹150"],
-["Transfer 1","₹50"],["Transfer 2","₹80"],["Transfer 3","₹100"],
-["Transfer 3 से अधिक","₹200"],["Special Package","₹250"]
-]
-},
+        <p>
+            हमारी प्रमुख सेवाओं के शुल्क
+        </p>
 
-{
-name:"Printing & Designing",
-cat:"Printing",
-icon:"🖨️",
-price:"₹16/sq.ft. से",
-desc:"Poster, Flex, Vinyl, One Vision और अन्य Designing & Printing.",
-rates:[
-["Poster Design","₹150/design"],["Normal Flex","₹16/sq.ft."],
-["Star Flex","₹26/sq.ft."],["Vinyl","₹75/sq.ft."],
-["One Vision","₹80/sq.ft."]
-]
-},
+    </div>
 
-{
-name:"Visiting Card",
-cat:"Visiting Card",
-icon:"📇",
-price:"₹750 से",
-desc:"आपके व्यवसाय के लिए शानदार और आकर्षक Visiting Card.",
-rates:[
-["Visiting Card","₹750 से"]
-]
-},
 
-{
-name:"Copy & Print",
-cat:"Copy & Print",
-icon:"📄",
-price:"₹3 से",
-desc:"B&W Copy, Color Copy, A3 Copy और Print की सुविधा.",
-rates:[
-["B&W Copy Single","₹3"],["B&W Copy Double","₹5"],
-["Color Copy Single","₹8"],["Color Copy Double","₹15"],
-["B&W Print","₹10/page"],["Color Print","₹20/page"],
-["A3 Copy Single","₹10"],["A3 Copy Double","₹15"],
-["A3 Print Single","₹15"],["A3 Print Double","₹20"]
-]
-},
+    <div style="overflow-x:auto;">
 
-{
-name:"Lamination",
-cat:"Lamination",
-icon:"💳",
-price:"₹20 से",
-desc:"A5, A4, A3 और Card Lamination.",
-rates:[
-["Card Lamination","₹20"],["A5 Lamination","₹20"],
-["A4 Lamination","₹30"],["A3 Lamination","₹50"],
-["1 Simple Lamination","₹60"],["2 Simple Laminations","₹100"]
-]
-},
+        <table class="rate-table">
 
-{
-name:"Payment / Transfer",
-cat:"Payment",
-icon:"💰",
-price:"₹10 से",
-desc:"Payment Receive और Money Transfer की सुविधा.",
-rates:[
-["₹10–₹300 Receive","₹10"],["₹10–₹300 Transfer","₹10"],
-["₹301–₹1000 Receive","₹10"],["₹301–₹1000 Transfer","₹20"],
-["₹1001–₹2000 Receive","₹20"],["₹1001–₹2000 Transfer","₹30"],
-["₹2001–₹3000 Receive","₹30"],["₹2001–₹3000 Transfer","₹40"],
-["₹3001–₹5000","₹40–₹60"],["₹5001–₹10000","₹60–₹110"],
-["₹10001 से ऊपर","1%"]
-]
-},
+            <thead>
 
-{
-name:"Samagra Services",
-cat:"Samagra",
-icon:"👨‍👩‍👧",
-price:"Contact",
-desc:"Samagra ID, KYC, Member ID, Family Division और अन्य कार्य.",
-rates:[
-["Samagra ID Generation","Contact"],
-["Samagra KYC","Contact"],
-["Member ID","Contact"],
-["Family Division","Contact"],
-["Other Samagra Work","Contact"]
-]
-},
+                <tr>
 
-{
-name:"Online Services",
-cat:"Online Services",
-icon:"🌐",
-price:"₹500 से",
-desc:"MSME, Gumasta, ITR, Food Licence और अन्य ऑनलाइन सेवाएँ.",
-rates:[
-["MSME Registration","₹500"],["Gumasta","₹2000"],
-["ITR Filing","₹1000/year"],["Food Licence 1 Year","₹1000"],
-["Food Licence 5 Years","₹4000"],["Income Certificate","₹250 से"],
-["Domicile Certificate","₹250 से"]
-]
-},
+                    <th>सेवा</th>
 
-{
-name:"Documents",
-cat:"Documents",
-icon:"📑",
-price:"₹250 से",
-desc:"Driving Licence, Birth Certificate, EWS और अन्य दस्तावेज.",
-rates:[
-["Driving Licence","₹3500"],["Heavy Driving Licence","₹7500"],
-["Birth Certificate","₹3000 से"],["EWS Certificate","₹4000"]
-]
-},
+                    <th>रेट</th>
 
-{
-name:"MP Bhulekh",
-cat:"MP Bhulekh",
-icon:"🗺️",
-price:"₹20 से",
-desc:"Khasra, Khatoni, Naksha तथा Certified Documents.",
-rates:[
-["Khasra","₹20"],["Naksha","₹20"],["Khatoni","₹20"],
-["Combo","₹50"],["Certified Pavti","₹200"],
-["Certified Khasra","₹100"],["Certified Khatoni","₹100"],
-["Certified Naksha","₹100"],["Certified Combo","₹400"]
-]
-},
+                </tr>
 
-{
-name:"Boards & Frames",
-cat:"Boards & Frames",
-icon:"🪧",
-price:"₹7 से",
-desc:"Flex, Wood Frame, Iron Frame और Light Board.",
-rates:[
-["Wood Frame","₹7/running ft."],["Iron Frame","₹110/kg"],
-["Light Board","₹680/sq.ft."],["Normal Flex","₹16/sq.ft."],
-["Star Flex","₹26/sq.ft."],["Vinyl","₹75/sq.ft."]
-]
-}
+            </thead>
 
-];
 
-const box=document.getElementById("products");
+            <tbody>
 
-function showProducts(list){
-box.innerHTML="";
-document.getElementById("noResult").style.display=list.length?"none":"block";
+                <tr>
+                    <td>PVC Card – 1 Card</td>
+                    <td class="rate">₹150</td>
+                </tr>
 
-list.forEach((p,i)=>{
-box.innerHTML+=`
-<div class="card">
-<div class="visual">
-<div class="product3d">${p.icon}</div>
-</div>
-<div class="cardBody">
-<div class="tag">${p.cat}</div>
-<h3>${p.name}</h3>
-<div class="price">${p.price}</div>
-<div class="cardBtns">
-<button class="smallBtn" onclick="openModal(${i})">Details</button>
-<a class="smallBtn green"
-href="https://wa.me/918109345074?text=${encodeURIComponent("मुझे "+p.name+" की जानकारी चाहिए।")}"
-target="_blank">WhatsApp</a>
-</div>
-</div>
-</div>`;
-});
-}
+                <tr>
+                    <td>PVC Card – 2 Cards</td>
+                    <td class="rate">₹250</td>
+                </tr>
 
-showProducts(products);
+                <tr>
+                    <td>PVC Card – 3 Cards</td>
+                    <td class="rate">₹300</td>
+                </tr>
 
-document.getElementById("search").addEventListener("input",function(){
-const q=this.value.toLowerCase().trim();
-showProducts(products.filter(p=>
-(p.name+" "+p.cat+" "+p.desc+" "+p.rates.map(x=>x.join(" ")).join(" "))
-.toLowerCase().includes(q)
-));
-});
+                <tr>
+                    <td>PF Balance Check</td>
+                    <td class="rate">₹20</td>
+                </tr>
 
-function openModal(index){
-const p=products[index];
-document.getElementById("detailIcon").textContent=p.icon;
-document.getElementById("detailTitle").textContent=p.name;
-document.getElementById("detailDesc").textContent=p.desc;
-document.getElementById("detailPrice").textContent=p.price;
-
-document.getElementById("rateList").innerHTML=p.rates.map(r=>
-`<div class="rateRow"><span>${r[0]}</span><b>${r[1]}</b></div>`
-).join("");
-
-document.getElementById("detailWhatsApp").href=
-"https://wa.me/918109345074?text="+
-encodeURIComponent("मुझे "+p.name+" की जानकारी चाहिए।");
-
-document.getElementById("modal").classList.add("active");
-}
-
-function closeModal(){
-document.getElementById("modal").classList.remove("active");
-}
-
-document.getElementById("modal").addEventListener("click",function(e){
-if(e.target===this)closeModal();
-});
-
-let startX=0;
-let rotate=0;
-const dp=document.getElementById("detailIcon");
-
-dp.addEventListener("touchstart",e=>{
-startX=e.touches[0].clientX;
-});
-dp.addEventListener("touchmove",e=>{
-let x=e.touches[0].clientX;
-rotate+=(x-startX)*0.6;
-startX=x;
-dp.style.transform="rotateY("+rotate+"deg) rotateX(8deg)";
-});
-</script>
-
-</body>
-</html>
+                <tr>
+                    <td>PF Card</td>
+                    <td class="rate">₹60</td>
+         
